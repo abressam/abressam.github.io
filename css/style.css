@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap');
 
 * {
     margin: 0;
@@ -8,7 +10,7 @@
 }
 
 body {
-    background: #f8edeb;
+    background: #fff;
     line-height: 1.4;
 }
 
@@ -23,7 +25,7 @@ img {
     justify-content: space-between;
     height: 80px;
     width: 100%;
-    background: #fff;
+    background: #f8edeb;
     padding: 0;
     color: black;
 }
@@ -77,6 +79,52 @@ img {
     visibility: hidden;
 }
 
+/* Conteúdo da Página */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 15px 0px;
+}
+
+.images-food {
+    padding: 50px;
+}
+
+#welcome {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Italianno', cursive;
+}
+
+#welcome-text {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', serif;
+}
+
+#text {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto', serif;
+    width: 700px;
+    text-indent: 1.5em
+}
+
+#title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Aref Ruqaa Ink', serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Ajustes de Tela */
 @media screen and (max-width:1080px) {
 .show-menu-btn,.hide-menu-btn{
     display: flex;
@@ -106,6 +154,10 @@ img {
     margin: 15px 20px 0px 30px;
     font-size: 40px;
     text-shadow: 1.5px 1.5px #ced4da
+}
+
+#text {
+    width: 100%;
 }
 
 .menu a {
