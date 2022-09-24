@@ -16,15 +16,19 @@ body {
 
 img {
     max-width: 100%;
-    padding: 0px 30px 0px 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.15),
+                0 6px 20px rgba(0, 0, 0, 0.7);
 }
 
 #gif {
-    padding: 30px;
-    width: 50%;
-    border-radius: 60px;
+    width: 60%;
+    border-radius: 30px;
 }
 
+#tabuleiro {
+    width: 600px;;
+}
   
 .header {
     display: flex;
@@ -92,7 +96,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0px 30px 0px;
+    padding: 120px 20px 30px 20px;
 }
 
 #welcome {
@@ -107,6 +111,36 @@ img {
     font-family: 'Roboto', serif;
 }
 
+.game {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.game-info {
+    width: 40%;
+    padding: 20px 20px 20px 0px;
+}
+
+.game-about {
+    width: 60%;
+    padding: 20px 0px 20px 80px;
+}
+
+#game-text-info {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Roboto', serif;
+}
+
+#game-text {
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Roboto', serif;
+    text-indent: 1.5em;
+}
+
 #text {
     font-size: 20px;
     text-align: justify;
@@ -114,6 +148,15 @@ img {
     width: 700px;
     text-indent: 1.5em;
     padding: 35px 30px 0px 30px;
+}
+
+#illustration-text {
+    font-size: 20px;
+    text-align: justify;
+    font-family: 'Roboto', serif;
+    width: 700px;
+    text-indent: 1.5em;
+    padding: 15px 30px 30px 30px;
 }
 
 #title {
@@ -128,14 +171,70 @@ img {
     flex-direction: column;
 }
 
-/* GRID */
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 0.5fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
 
 
 /* Ajustes de Tela */
+
 @media screen and (max-width:1080px) {
 .show-menu-btn,.hide-menu-btn{
     display: flex;
 }
+
+.game {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+.game-about, .game-info {
+    padding: 20px;
+    width: 100%;
+}
+
 
 .menu {
     display: flex;
