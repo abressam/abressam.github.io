@@ -60,16 +60,6 @@
     background: #ff99e5;
 }
 
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-footer{
-    margin-top: auto;
-}
-
 img {
     max-width: 50%;
 }

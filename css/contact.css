@@ -1,0 +1,66 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.email, .linkedin, .github {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-text {
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 30px;
+    padding: 40px;
+}
+
+#text {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#info {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 16px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#info:hover {
+    transition: 0.4s;
+    color: #c059a6;
+}
+
+@media screen and (max-width:1080px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #info {
+        margin-bottom: 40px;
+    }
+}

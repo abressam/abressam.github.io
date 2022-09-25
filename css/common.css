@@ -85,6 +85,13 @@ footer {
     font-family: 'Roboto', serif;
     width: 100%;
     height: 80px;
+    margin-top: auto;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 #footer-text {
