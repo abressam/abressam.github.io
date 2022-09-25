@@ -1,0 +1,100 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.about-me {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.my-photo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#title-text {
+    font-family: 'Aref Ruqaa Ink', serif;
+    font-size: 30px;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+#text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-align: justify;
+    width: 90%;
+    padding-top: 40px;
+    text-indent: 1.5em;
+}
+
+.port-text {
+    padding: 20px;
+    background: #ffcbf2;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    text-transform: uppercase;
+    margin: 50px 0px 20px 0px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: transparent;
+    display: inline-block;
+    width: 125px;
+
+}
+
+.port-text:hover {
+    transition: 0.4s;
+    background: #ff99e5;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+}
+
+img {
+    max-width: 50%;
+}
+
+@media screen and (max-width:1080px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-me, .my-photo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #title-text {
+        text-align: center;
+    }
+
+    #text {
+        width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="icon" href="/assets/icon.svg" type="image/icon type">
+    <script src="/js/app.js"></script>
     <title>Home</title>
 </head>
 <body>
-    <p>Teste</p>
+
+    <nav class="header">
+        <input type="checkbox" id="chk" onclick="menuButton()">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-bars"></i>       
+        </label>
+        
+        
+        <p id="logo">ABressam</p>
+        <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#">Experiência e Conhecimentos</a></li>
+        <li><a href="index.html">Portfólio</a></li>
+        <li><a href="#">Contato</a></li>
+
+        <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+        </label>
+    </ul>
+    </nav>
+
+    <div class="wrapper">
+        <section class="about-me">
+            <p id="title-text">Olá, meu nome é Amanda!</p>
+            <p id="text">
+                Tenho 22 anos, sou estudante do curso de graduação
+                Sistemas de Informação na PUCPR, apaixonada pela
+                área de tecnologia e artista de jogos por diversão!
+            </p>
+            
+            <a class="port-text" href="index.html">PORTFÓLIO</a>
+
+        </section>
+        <div class="my-photo">
+            <img src="/assets/photo.svg" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p id="footer-text">ABressam</p>&copy; 2022
+    </footer>
+
 </body>
 </html>

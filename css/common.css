@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    line-height: 1.4;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    background: #ffcbf2;
+    padding: 0;
+    color: black;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Italianno', cursive;
+    margin: 10px 0px 0px 30px;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px #ced4da
+}
+
+.menu {
+    display: flex;
+    justify-content: row;
+    list-style: none;
+    gap: 30px;
+    margin: 30px 40px 0px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.menu a {
+    color: black;
+    text-transform: uppercase;
+    font-style: initial;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.show-menu-btn,.hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn i {
+    margin: 30px 40px;
+}
+
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover {
+    color: #c965bb;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #171414;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto', serif;
+    width: 100%;
+    height: 80px;
+}
+
+#footer-text {
+    color: white;
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+
+/* Ajustes de Tela */
+
+@media screen and (max-width:1080px) {
+.show-menu-btn,.hide-menu-btn{
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    background: #fff;
+    right: -100%;
+    gap: 20px;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-family: 'Italianno', cursive;
+    margin: 15px 20px 0px 30px;
+    font-size: 40px;
+    text-shadow: 1.5px 1.5px #ced4da
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+}
+
+.hide-menu-btn {
+    position: absolute;
+    top: 0px;
+    float: left;
+    margin: 30px 0px 0px 40px;
+}
+
+#chk:checked ~ .menu{
+    right: 0;
+}
+}
