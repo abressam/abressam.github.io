@@ -12,6 +12,7 @@
 body {
     background: #fff;
     line-height: 1.4;
+    padding-top: 85px;
 }
 
 .header {
@@ -23,6 +24,9 @@ body {
     background: #ffcbf2;
     padding: 0;
     color: black;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
 }
 
 #logo {
